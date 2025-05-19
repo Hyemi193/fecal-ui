@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onboarding</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="onboarding" id="step1">
+    <h2>Welcome to FECAL SCANNER</h2>
+    <button onclick="nextStep(2)">Next</button>
+  </div>
+  <div class="onboarding hidden" id="step2">
+    <h2>STEP 1</h2>
+    <p>변기를 가운데에 오도록 하세요</p>
+    <button onclick="nextStep(3)">Next</button>
+  </div>
+  <div class="onboarding hidden" id="step3">
+    <h2>STEP 2</h2>
+    <p>카메라 버튼을 눌러 스캔하세요</p>
+    <button onclick="nextStep(4)">Next</button>
+  </div>
+  <div class="onboarding hidden" id="step4">
+    <h2>STEP 3</h2>
+    <p>AI 분석 결과를 확인하세요</p>
+    <button onclick="nextStep(5)">Next</button>
+  </div>
+  <div class="onboarding hidden" id="step5">
+    <h2>Now, Track Your Gut Health</h2>
+    <button onclick="window.location.href='welcome.html'">Start</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
